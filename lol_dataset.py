@@ -7,10 +7,6 @@ import torchvision.transforms.functional as TF
 
 
 class PairedLowLightDataset(Dataset):
-    """
-    Standard paired dataset loader for low-light enhancement (LOL-v1, LOL-v2, etc.).
-    Expects low-light and normal-light (high) images to share matching filenames.
-    """
     def __init__(
         self,
         low_dir: str,
